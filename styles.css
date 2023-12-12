@@ -1,0 +1,158 @@
+/* CSS Reset */
+body, header, nav, footer, ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Global Styles */
+body {
+  background-color: #000;
+}
+
+/* Header Styles */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #000;
+  height: 100px; /* Adjusted height for smaller screens */
+}
+
+header img {
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navigation Styles */
+nav {
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center; /* Center the navigation items for mobile */
+}
+
+nav li {
+  font-family: 'Francois One', sans-serif;
+}
+
+nav li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  header {
+    height: 80px; /* Adjusted height for smaller screens */
+  }
+
+  nav {
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+  }
+
+  /* Navigation link styles */
+  nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    display: block;
+  }
+
+  nav li:first-child {
+    border-top: none;
+  }
+
+  body, nav, main {
+    color: #fff;
+  }
+
+  /* Styles for the .mobile class */
+  /* Show mobile class, hide tablet-desktop class */
+  .mobile {
+    display: block;
+  }
+
+  /* Style rule for hiding tablet-desktop content */
+  .tablet-desktop {
+    display: none;
+  }
+
+  /* Add Style Rules for the Tel-Link Class */
+
+  /* First set of rules for .tel-link class */
+  .tel-link {
+    background-color: #404040;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .tel-link:hover {
+    background-color: #0056b3; /* Change the background color on hover if desired */
+  }
+
+  /* Second set of rules for .tel-link a class */
+  .tel-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+  }
+
+  /* Style rule for the hours class */
+  .hours {
+    margin-left: 10%;
+  }
+
+  /* Style rule for the main element */
+  main {
+    clear: none;
+    font-size: 1.15em;
+  }
+
+  main img {
+    max-width: 100%; /* Set the maximum width to 100% of the parent container */
+    height: auto;    /* Ensure the aspect ratio is maintained */
+  }
+
+  /* Add Style Rule for the Round Class */
+  .round {
+    border-radius: 8px;
+  }
+
+  /* Modify Style Rules for Contact Page */
+  #contact .contact-email-link {
+    color: #ffcc00; /* Update the color for the email link */
+  }
+
+  /* Modify Style Rules for Map */
+  .map {
+    border: 2px solid #ffcc00; /* Update the border thickness and color for the map */
+    width: 95%; /* Set the width to 95% */
+    height: 50%; /* Set the height to 50% */
+  }
+}
+
+
+
+
+
+
+
+
+
